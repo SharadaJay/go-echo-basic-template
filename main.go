@@ -6,7 +6,7 @@ import (
 	"basic-echo-app/BookStore/service"
 	"basic-echo-app/BookStore/utils"
 	"fmt"
-	"github.com/labstack/echo"
+	"github.com/labstack/echo/v4"
 )
 
 func main() {

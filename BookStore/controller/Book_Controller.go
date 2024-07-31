@@ -3,8 +3,9 @@ package controller
 import (
 	"basic-echo-app/BookStore/intf"
 	"fmt"
+	"net/http"
 
-	"github.com/labstack/echo"
+	"github.com/labstack/echo/v4"
 )
 
 type BookController struct {
@@ -23,7 +24,7 @@ func NewBookController(echo *echo.Echo, bookServiceObject intf.BookService) {
 
 func (controllerObj *BookController) PrintAuthor(ec echo.Context) error {
 
-	return nil
+	return ec.String(http.StatusOK, "Author X")
 }
 
 func (controllerObj *BookController) Test(ec echo.Context) error {
@@ -33,5 +34,5 @@ func (controllerObj *BookController) Test(ec echo.Context) error {
 	requestContext := ec.Request().Context()
 	controllerObj.bookService.TestBookService(requestContext)
 
-	return nil
+	return ec.String(http.StatusOK, "Test Successful")
 }
