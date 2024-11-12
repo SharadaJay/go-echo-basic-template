@@ -1,7 +1,7 @@
 # go-echo-basic-template
 A basic REST API template for Go with echo
 
-* Should provide following env variables
+* Should provide following environment variable. (The value is the name of the property file without the extension)
     * ENV
       * In Windows PowerShell
           ```bash
