@@ -27,7 +27,7 @@ To run the application locally;
 <br><br>
 To create a docker image;<br>
 
-* Run docker build<br>
+* Run docker build<br><br>
     ```bash
         docker build -t go-echo-image .
     ```
