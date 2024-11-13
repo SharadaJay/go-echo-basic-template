@@ -1,6 +1,6 @@
 # go-echo-basic-template
-A basic REST API template for Go with echo
-
+A basic REST API template for Go with echo.<br><br>
+To run the application locally;
 * Should provide following environment variable. (The value is the name of the property file without the extension)
     * ENV
       * In Windows PowerShell
@@ -23,4 +23,11 @@ A basic REST API template for Go with echo
 * Run application
     ```bash
         go run main.go
+    ```
+<br><br>
+To create a docker image;<br><br>
+
+* Run docker build
+    ```bash
+        docker build -t go-echo-image .
     ```
